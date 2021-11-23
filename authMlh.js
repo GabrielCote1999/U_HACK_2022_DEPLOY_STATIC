@@ -1,4 +1,4 @@
-
+   
     var result = null,
         tmp = [];
     location.search
@@ -11,6 +11,7 @@
     console.log(result);
     console.log("testtt")
 
+    if(result){
     fetch("https://my.mlh.io/oauth/token", {
    method: 'POST',
    body: JSON.stringify({
@@ -21,4 +22,5 @@
     'grant_type':'authorization_code'
    })
 })
+    }
   
