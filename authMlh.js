@@ -1,4 +1,4 @@
-    const axios = require('axios');
+
     var result = null,
         tmp = [];
     location.search
