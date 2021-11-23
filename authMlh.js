@@ -11,7 +11,7 @@
     console.log(result);
     console.log("testtt")
 
-    if(result){
+    if(result!= null){
     fetch("https://my.mlh.io/oauth/token", {
    method: 'POST',
    body: JSON.stringify({
