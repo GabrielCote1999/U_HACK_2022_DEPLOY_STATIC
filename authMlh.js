@@ -16,7 +16,8 @@ if (result != null) {
     headers:{
       'Origin': 'http://127.0.0.1:3000',
       'Access-Control-Request-Method': 'POST',
-      'Access-Control-Request-Headers': 'Content-Type, Authorization'
+      'Access-Control-Request-Headers': 'Content-Type, Authorization',
+      'Access-Control-Allow-Origin':'https://uqode.ca'
     },
     body: JSON.stringify({
       'client_id': '2fopFxTgj7LCwF23WN5ORpZjTOYvszb63pG0ILfjCv4',
