@@ -12,12 +12,15 @@ console.log("testtt")
 //exISOQBW-UbGOTIkAhR5iyNCDoMv71x8rrvAIdlN1TQ
 if (result != null) {
   fetch("https://my.mlh.io/oauth/token", {
-    method: 'POST',
+  mode: 'cors',
+  credentials: 'include',
+  method: 'POST',
     headers:{
       'Origin': 'http://127.0.0.1:3000',
       'Access-Control-Request-Method': 'POST',
       'Access-Control-Request-Headers': 'Content-Type, Authorization',
-      'Access-Control-Allow-Origin':'https://uqode.ca'
+      'Access-Control-Allow-Origin':'https://uqode.ca',
+      'Access-Control-Allow-Credentials': 'true', 
     },
     body: JSON.stringify({
       'client_id': '2fopFxTgj7LCwF23WN5ORpZjTOYvszb63pG0ILfjCv4',
