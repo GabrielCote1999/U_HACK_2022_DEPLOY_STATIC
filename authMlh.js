@@ -13,6 +13,11 @@ console.log("testtt")
 if (result != null) {
   fetch("https://my.mlh.io/oauth/token", {
     method: 'POST',
+    headers:{
+      'Origin': 'http://127.0.0.1:3000',
+      'Access-Control-Request-Method': 'POST',
+      'Access-Control-Request-Headers': 'Content-Type, Authorization'
+    },
     body: JSON.stringify({
       'client_id': '2fopFxTgj7LCwF23WN5ORpZjTOYvszb63pG0ILfjCv4',
       'client_secret': 'ejSnQ0VygGznYvkqk8JYDl0c1J3LIIa4FLEmwnoHUb0',
